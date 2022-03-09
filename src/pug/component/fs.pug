@@ -1,0 +1,44 @@
+mixin news(args={})
+   a(href="#" class=args.mod__class).news
+      img(src=args.img, alt=args.title).news__img
+      span.news__info
+         span.news__title.title=args.title
+section.fs
+   .conteiner
+      nav.nav 
+         img(src="./assets/imgs/logo.png", alt="logo").nav__img
+         ul.nav__list 
+            li.nav__item 
+               a.nav__link(href="") About
+            li.nav__item 
+               a.nav__link(href="") News
+            li.nav__item 
+               a.nav__link(href="") Music 
+            li.nav__item 
+               a.nav__link(href="") Media
+            li.nav__item 
+               a.nav__link(href="") Tours
+            li.nav__item 
+               a.nav__link(href="") Contacts
+      header.header
+         h1.header__title New Single
+         h2.header__subtitle War For Love
+         .header__song 
+            .player
+               .player__btn
+                  img.player__img(src="./assets/imgs/control__play.png", alt="")
+            .progres__container
+               .progres
+         .header__news
+            +news({
+            img: './assets/imgs/news1.png',
+            title: 'Working on my upcoming full-lenth album that`s releasing later this year.',
+         })
+            +news({
+            img: './assets/imgs/news2.png',
+            title: 'Halloween vibes. Listen my new track!',
+         })
+            +news({
+            img: './assets/imgs/news3.png',
+            title: 'WarForLove is OUT NOW!! Stream it here!',
+         })

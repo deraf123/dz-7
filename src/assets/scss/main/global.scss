@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+body {
+  background: #1c1b21;
+}
+.conteiner {
+  max-width: 1130px;
+  margin: 0px auto;
+}
+
+.main__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  color: #ffffff;
+  display: flex;
+  gap: 30px;
+  //   position: relative;
+  // //   &::before {
+  // //     content: url("../../imgs/Group1.png");
+  // //     position: absolute;
+  // //     left: -104px;
+  // //     top: -40px;
+  // //     width: 64px;
+  // //     height: 31px;
+  // //     background-image: url("../../imgs/Group1.png");
+  // //     z-index: 9;
+  // //   }
+}

@@ -48,7 +48,7 @@ function scss() {
 function watcher() {
    gulp.watch('src/pug**/*.pug', pugFunc)
    gulp.watch('src/assets/imgs/**/*', images)
-   gulp.watch('src/assest/scss/**/*.scss', scss)
+   gulp.watch('src/assets/scss/**/*.scss', scss)
 }
 
 
