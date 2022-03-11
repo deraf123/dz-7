@@ -15,7 +15,7 @@ function browserSyncFunc() {
 }
 
 function pugFunc() {
-   return gulp.src('src/pug/*.pug')
+   return gulp.src('src/pug/**/*.pug')
       .pipe(plumber())
       .pipe(pug({
          pretty: true
@@ -46,7 +46,7 @@ function scss() {
 }
 
 function watcher() {
-   gulp.watch('src/pug**/*.pug', pugFunc)
+   gulp.watch('src/pug/**/*.pug', pugFunc)
    gulp.watch('src/assets/imgs/**/*', images)
    gulp.watch('src/assets/scss/**/*.scss', scss)
 }
